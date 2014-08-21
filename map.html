@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+</body>
+<script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	var trackInfo= [{"track 1":[
+    {"car id": "TTX1234"}, 
+    {"car id": "DTX1235"},
+    {"car id": "DTX1236"}
+]},
+{"track 2":[
+    {"car id": "TTX456"}, 
+    {"car id": "TTX789"},
+    {"car id": "DTX567"}
+]},
+{"track 3":[
+    {"car id": "DTX5766"}, 
+    {"car id": "DTX1452"},
+    {"car id": "TTX6301"}
+]}];
+    for (i = 0; i < trackInfo.length; i++) {
+      $("div").append(trackInfo[i]["car id"] + " ");
+ };
+</script>
+<div>insert here</div>
+</html>
